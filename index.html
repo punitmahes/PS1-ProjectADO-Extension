@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADO Extension</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="headMenu">
+        <select id = "orgMenu" class="dropdown">
+          <option id = "org" value="Organization">Organization</option>
+        </select>
+        <select id = "projMenu" class="dropdown">
+          <option id = "proj" value="Project">Project</option>
+        </select>
+        <select id = "taskMenu" class="dropdown">
+          <option id = "task" value="Task">Task</option>
+          <option id = "issues" value="Issue">Bug</option>
+          <option id = "epic" value="Epic">Epic</option>
+        </select>
+        <button id="refreshButton" class="btn">Refresh</button>
+      </div>
+    <div class="taskTable">
+      <table class = "table table-striped">
+        <tr class = "bg-info fixtable">
+          <th>ID</th>
+          <th>Name</th>
+          <th>Area Path</th>
+          <th>Priority</th>
+        </tr>
+        <tbody id = "myTable" class="tableBody">
+        </tbody>
+      </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
